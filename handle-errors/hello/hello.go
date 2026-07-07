@@ -24,6 +24,16 @@ func main() {
     if(err != nil) {
         log.Println("Non fatal: ", err)
     }
+    
+    // Turn log prefixes off
+    
+    log.SetFlags(0)
+
+    message, err = greetings.Greet("")
+
+    if(err != nil) {
+        log.Println("Non fatal, no prefix", err)
+    } 
  
     message, err = greetings.Greet("")
 
