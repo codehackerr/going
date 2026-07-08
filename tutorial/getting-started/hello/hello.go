@@ -2,9 +2,10 @@ package main
 
 import  (
     "fmt"
+    "example.com/greetings"
 )
 
 func main() {
 
-    fmt.Println("Hello")
+    fmt.Println(greetings.Greet("John"))
 }
