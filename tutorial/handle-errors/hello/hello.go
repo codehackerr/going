@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    "example.com/greetings"
+    greetings "example.com/greetings-errors"
     "log"
 )
 
