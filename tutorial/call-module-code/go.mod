@@ -1,7 +1,7 @@
-module example.com/hello
+module github.com/codehackerr/going/tutorial/call-module-code
 
 go 1.26.4
 
-replace example.com/greetings => ..\create-module\greetings
+require github.com/codehackerr/going/tutorial/create-module/greetings v0.0.0
 
-require example.com/greetings v0.0.0-00010101000000-000000000000
+replace github.com/codehackerr/going/tutorial/create-module/greetings => ../create-module/greetings

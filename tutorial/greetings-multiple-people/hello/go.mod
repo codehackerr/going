@@ -1,9 +1,7 @@
-module example.com/hello
+module github.com/codehackerr/going/tutorial/greetings-multiple-people/hello
 
 go 1.26.4
 
-replace example.com/random-greetings => ../greetings
+require github.com/codehackerr/going/tutorial/greetings-multiple-people/greetings v0.0.0
 
-require example.com/multiple-greetings v0.0.0-00010101000000-000000000000
-
-replace example.com/multiple-greetings => ../greetings
+replace github.com/codehackerr/going/tutorial/greetings-multiple-people/greetings => ../greetings

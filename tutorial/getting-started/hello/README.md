@@ -1,6 +1,6 @@
 # command 
 ```
-go run hello.go
+go run .\tutorial\getting-started\hello
 ```
 
 (Getting Started)[https://go.dev/doc/tutorial/getting-started]

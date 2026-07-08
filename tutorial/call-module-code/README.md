@@ -1,6 +1,6 @@
 # command 
 ```
-go run hello.go
+go run .\tutorial\call-module-code
 ```
 
 (Getting Started)[https://go.dev/doc/tutorial/call-module-code]

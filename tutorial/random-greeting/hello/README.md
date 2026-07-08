@@ -1,6 +1,6 @@
 # command 
 ```
-go run hello.go
+go run .\tutorial\random-greeting\hello
 ```
 ## Note: 
 

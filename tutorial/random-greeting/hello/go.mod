@@ -1,7 +1,7 @@
-module example.com/hello
+module github.com/codehackerr/going/tutorial/random-greeting/hello
 
 go 1.26.4
 
-replace example.com/random-greetings => ../greetings
+require github.com/codehackerr/going/tutorial/random-greeting/greetings v0.0.0
 
-require example.com/random-greetings v0.0.0-00010101000000-000000000000
+replace github.com/codehackerr/going/tutorial/random-greeting/greetings => ../greetings

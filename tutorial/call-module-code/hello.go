@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    "example.com/greetings"
+    "github.com/codehackerr/going/tutorial/create-module/greetings"
 )
 
 func main() {

@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    greetings "example.com/greetings-errors"
+    greetings "github.com/codehackerr/going/tutorial/handle-errors/greetings"
     "log"
 )
 

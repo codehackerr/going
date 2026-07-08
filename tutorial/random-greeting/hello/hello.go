@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    greetings "example.com/random-greetings"
+    greetings "github.com/codehackerr/going/tutorial/random-greeting/greetings"
     "log"
 )
 

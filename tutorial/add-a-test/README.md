@@ -4,10 +4,7 @@ Demonstrates
  unit test ./greetings/greetings_test
  
 ```
-cd ./greetings
- 
-go test .
-
+go test .\tutorial\add-a-test\greetings
 ```
 
 [Tutorial: Add a test](https://go.dev/doc/tutorial/add-a-test)

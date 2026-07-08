@@ -1,0 +1,14 @@
+go 1.26.4
+
+use (
+	./tutorial/add-a-test/greetings
+	./tutorial/call-module-code
+	./tutorial/create-module/greetings
+	./tutorial/getting-started/hello
+	./tutorial/greetings-multiple-people/greetings
+	./tutorial/greetings-multiple-people/hello
+	./tutorial/handle-errors/greetings
+	./tutorial/handle-errors/hello
+	./tutorial/random-greeting/greetings
+	./tutorial/random-greeting/hello
+)

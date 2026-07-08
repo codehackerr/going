@@ -1,16 +1,9 @@
-This is a library and is not in a main package
-So you cannot test this lib directly
+This is a library module, not a `main` package, so it is not run directly.
 
-Alternatives are create a unit test ( later topic )
-Create a consumer in main package
+Use a consumer program instead:
 
-
-```
-go run .
+```powershell
+go run .\tutorial\call-module-code
 ```
 
-```
-go test .
-```
-
-should complete and no errors
+If you want automated verification for a library module, add tests as shown in `tutorial\add-a-test\greetings`.

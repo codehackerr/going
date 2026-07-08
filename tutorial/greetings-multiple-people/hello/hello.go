@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    greetings "example.com/multiple-greetings"
+    greetings "github.com/codehackerr/going/tutorial/greetings-multiple-people/greetings"
     "log"
 )
 

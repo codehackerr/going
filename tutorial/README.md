@@ -1,42 +1,26 @@
 # Go getting started
 
-Implementations of go tutorials in respective sub directories
+Implementations of Go tutorials in respective subdirectories.
 
 [Getting Started](https://go.dev/doc/tutorial)
 
-If you are here to learn go, try doing everything from a minimal editor and command line.
-No IDEs yet. This builds familiarity and understanding of go echo systems otherise hidden behind IDEs
+## Workspace layout
 
-## Note: 
-Each sub directory is a self contained example
+The repo root contains a `go.work` file so the tutorial modules can be used together as one multi-module project.
 
-## Go command examples
+## Project-local Go output
 
-initialize go module
-```
-go mod init example/hello
+If antivirus is interfering with builds, run the repo's `.\go-local.cmd` wrapper from the repo root. It moves Go's temp files, build cache, module cache, and install output into `.\.local-go\` inside this project. `go-local.ps1` is also available if you prefer PowerShell and allow local scripts.
 
-```
+## Run from the repo root
 
-replace local dependencies
-
-```
-go mod edit --replace example.com/greetings=./greetings
-```
-
-resolve dependencies
-
-```
-go mod tidy
-
+```powershell
+.\go-local.cmd run .\tutorial\getting-started\hello
+.\go-local.cmd run .\tutorial\call-module-code
+.\go-local.cmd run .\tutorial\random-greeting\hello
+.\go-local.cmd run .\tutorial\greetings-multiple-people\hello
+.\go-local.cmd run .\tutorial\handle-errors\hello
+.\go-local.cmd test .\tutorial\add-a-test\greetings
 ```
 
-## Note: No go.sum entries for local modules
-
-
-Run 
-
-```
-go mod run .
-
-```
+`tutorial\create-module\greetings` is a library module, so it is consumed by `tutorial\call-module-code` rather than run directly.

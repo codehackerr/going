@@ -1,6 +1,6 @@
 # command 
 ```
-go run hello.go
+go run .\tutorial\handle-errors\hello
 ```
 
 [Getting Started](https://go.dev/doc/tutorial/call-module-code)
@@ -24,7 +24,7 @@ go: example.com/hello imports
 To overcome this replace the dependency
 
 ```
-go mod edit --replace examples.com/greetings-errors=../greetings
+go mod edit --replace example.com/greetings-errors=../greetings
 
 ```
 
