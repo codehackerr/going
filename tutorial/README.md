@@ -1,11 +1,8 @@
 # command 
-```
-go run hello.go
-```
 
-(Getting Started)[https://go.dev/doc/tutorial/call-module-code]
+Implementations of go tutorials in respective sub directories
+
+[Getting Started](https://go.dev/doc/tutorial)
 
 ## Note: 
-
-Pay attention to the require and then a replace.
-Local modules does not get a checksum. make sense, integrity is not as important for local
+Each sub directory is a self contained example
