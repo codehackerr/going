@@ -2,7 +2,7 @@ package main
 
 import  (
     "fmt"
-    "example.com/random-greetings"
+    greetings "example.com/random-greetings"
     "log"
 )
 
@@ -11,36 +11,18 @@ func main() {
     // set prefix
     log.SetPrefix("Greetings:")
 
-
-    // Decalare and init
-    message, err := greetings.Greet("John")
+    
+    //each call should get a random greeting
+    greet()
+    greet()
+    greet()
+    greet()
+    greet()
+ }
+ 
+ func greet() {
+    // suppress unused _
+    message, _ := greetings.Greet("John")
     
     fmt.Println(message)
-
-    
-    // Assign
-    message, err = greetings.Greet("")
-
-    if(err != nil) {
-        log.Println("Non fatal: ", err)
-    }
-    
-    // Turn log prefixes off
-    
-    log.SetFlags(0)
-
-    message, err = greetings.Greet("")
-
-    if(err != nil) {
-        log.Println("Non fatal, no prefix", err)
-    } 
- 
-    message, err = greetings.Greet("")
-
-    if(err != nil) {
-        log.Fatal("Fatal: ", err)
-    }
-    
-    
-
-}
+ }
