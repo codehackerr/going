@@ -1,11 +1,9 @@
 package main
 
-import  (
-    "fmt"
-    "example.com/greetings"
+import (
+	"fmt"
 )
 
 func main() {
-
-    fmt.Println(greetings.Greet("John"))
+	fmt.Println("Hello!")
 }
